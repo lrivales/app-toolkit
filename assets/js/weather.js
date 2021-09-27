@@ -30,7 +30,7 @@ function getWeather(searchCity) {
                 // if city name is invalid
                 $("#weatherModalTitle").text("City is invalid. Please try again.");
                 $("#weatherModalTitle").addClass("text-error");
-                localStorage.clear();
+                // localStorage.clear();
                 $("#weatherModalFooter").hide()
             }
         });
@@ -65,7 +65,7 @@ $("#weatherFormBtn").click(function() {
 });
 
 $("#weatherDeleteBtn").click(function() {
-    localStorage.clear();
+    // localStorage.clear();
     $("#weatherModalFooter").hide()
     $("#weatherContent").hide();
     $("#weatherFormGrp").show();
