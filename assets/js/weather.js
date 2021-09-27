@@ -69,4 +69,6 @@ $("#weatherDeleteBtn").click(function() {
     $("#weatherModalFooter").hide()
     $("#weatherContent").hide();
     $("#weatherFormGrp").show();
+    $("#weatherModalTitle").text("What city are you in?");
+    $("#weatherModalTitle").removeClass("text-success");
 });
