@@ -10,11 +10,8 @@ function getWeather(searchCity) {
         .then(currentWeather => {
             // get city name
             if (currentWeather.name) {
-                // delete weather form
-                $("#weatherFormGrp").empty();
-                // get city coordinates
-                var lat = (currentWeather.coord.lat);
-                var lon = (currentWeather.coord.lon);
+                // hide weather form
+                $("#weatherFormGrp").hide();
                 // update modal with weather info
                 $("#weatherModalTitle").text(currentWeather.name);
                 $("#weatherModalTitle").removeClass("text-error");
@@ -24,16 +21,24 @@ function getWeather(searchCity) {
                 $("#weatherModalTemp").text("Temp: "+currentWeather.main.temp+"F");
                 $("#weatherModalWind").text("Wind: "+currentWeather.wind.speed+" MPH");
                 $("#weatherModalHumidity").text("Humidity: "+currentWeather.main.humidity+"%");
+                // show weather content
+                $("#weatherContent").show();
+                // show delete button
+                $("#weatherModalFooter").show()
+
             } else {
                 // if city name is invalid
                 $("#weatherModalTitle").text("City is invalid. Please try again.");
                 $("#weatherModalTitle").addClass("text-error");
                 localStorage.clear();
+                $("#weatherModalFooter").hide()
             }
         });
 };
 
 $("#weatherBtn").click(function() {
+    // hide delete button
+    $("#weatherModalFooter").hide()
     // get city name from local storage
     var city = JSON.parse(localStorage.getItem("city"));
     // if localstorage is not empty
@@ -57,4 +62,11 @@ $("#weatherFormBtn").click(function() {
     getWeather(searchCity);
     // store user input in local storage
     localStorage.setItem("city", JSON.stringify(searchCity));
+});
+
+$("#weatherDeleteBtn").click(function() {
+    localStorage.clear();
+    $("#weatherModalFooter").hide()
+    $("#weatherContent").hide();
+    $("#weatherFormGrp").show();
 });
