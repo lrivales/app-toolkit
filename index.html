@@ -1,168 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- spectre css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css" integrity="sha512-9RIcp1f4CE6dEuYX9085tXaEbYd1ap04d2Av1ub/dwuT33WbfbHStDdQ+shKrp5wzZzleh5DOg+7ABSnaQP/nQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- spectre icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.css" integrity="sha512-OfQ07xsgPsERx453uK0hbqM+CcbkWqeYc29UaWa6gYqrIKd+pc08iD6NeHa2qVw/2c/RYSsbFblvVZs1s56+Sg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>App ToolBox</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- spectre css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre.min.css"
+    integrity="sha512-9RIcp1f4CE6dEuYX9085tXaEbYd1ap04d2Av1ub/dwuT33WbfbHStDdQ+shKrp5wzZzleh5DOg+7ABSnaQP/nQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- spectre icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.5.9/spectre-icons.css"
+    integrity="sha512-OfQ07xsgPsERx453uK0hbqM+CcbkWqeYc29UaWa6gYqrIKd+pc08iD6NeHa2qVw/2c/RYSsbFblvVZs1s56+Sg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>App ToolBox</title>
 </head>
+
 <body>
-    <div class="hero hero-sm bg-gray">
-        <div class="hero-body">
-          <h1>App Toolkit</h1>
-          <p>Your Personal Utility Belt</p>
+  <div class="hero hero-sm bg-gray">
+    <div class="hero-body">
+      <h1>App Toolkit</h1>
+      <p>Your Personal Utility Belt</p>
+    </div>
+  </div>
+  <header class="navbar">
+    <section class="navbar-section">
+      <a href="https://mail.google.com" target="_blank" class="btn btn-link">Gmail</a>
+      <a href="https://www.facebook.com" target="_blank" class="btn btn-link">Facebook</a>
+    </section>
+    <section class="navbar-section">
+      <div class="input-group input-inline">
+        <script async src="https://cse.google.com/cse.js?cx=ef305e90e5fdd141c"></script>
+        <div class="gcse-search"></div>
+      </div>
+    </section>
+  </header>
+  <div class="container">
+    <div class="columns">
+      <div class="column col-md-12">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title h5">Weather</div>
+            <!-- <div class="card-subtitle text-gray">...</div> -->
+          </div>
+          <div class="card-body">
+            Check your local weather.
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary" id="weatherBtn"><i class="icon icon-forward"></i></button>
+          </div>
         </div>
       </div>
-    <header class="navbar">
-        <section class="navbar-section">
-            <a href="https://mail.google.com" target="_blank" class="btn btn-link">Gmail</a>
-            <a href="https://www.facebook.com" target="_blank" class="btn btn-link">Facebook</a>
-        </section>
-        <section class="navbar-section">
-            <div class="input-group input-inline">
-                <script async src="https://cse.google.com/cse.js?cx=ef305e90e5fdd141c"></script>
-                <div class="gcse-search"></div> 
-            </div>
-        </section>
-    </header>
-    <div class="container">
-        <div class="columns">
-            <div class="column col-md-12">
-                <div class="card">
-                    <div class="card-header">
-                      <div class="card-title h5">Weather</div>
-                      <!-- <div class="card-subtitle text-gray">...</div> -->
-                    </div>
-                    <div class="card-body">
-                      Check your local weather.
-                    </div>
-                    <div class="card-footer">
-                      <button class="btn btn-primary" id="weatherBtn"><i class="icon icon-forward"></i></button>
-                    </div>
-                  </div>
-            </div>
-            <div class="column col-sm-12">
-                <div class="card">
-                    <div class="card-header">
-                      <div class="card-title h5">News</div>
-                      <!-- <div class="card-subtitle text-gray">...</div> -->
-                    </div>
-                    <div class="card-body">
-                      ...
-                    </div>
-                    <div class="card-footer">
-                      <button class="btn btn-primary" id="newsBtn"><i class="icon icon-forward"></i></button>
-                    </div>
-                  </div>
-            </div>
-            <div class="column col-sm-12">
-              <div class="card">
-                  <div class="card-header">
-                    <div class="card-title h5">Music</div>
-                    <!-- <div class="card-subtitle text-gray">...</div> -->
-                  </div>
-                  <div class="card-body">
-                    See today's top tracks!
-                  </div>
-                  <div class="card-footer">
-                    <button class="btn btn-primary" id="musicBtn"><i class="icon icon-forward"></i></button>
-                  </div>
-                </div>
+      <div class="column col-sm-12">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title h5">News</div>
+            <!-- <div class="card-subtitle text-gray">...</div> -->
           </div>
-            <div class="column col-sm-12">
-                <div class="card">
-                    <div class="card-header">
-                      <div class="card-title h5">Coming Soon!</div>
-                      <!-- <div class="card-subtitle text-gray">...</div> -->
-                      <div class="card-subtitle text-gray"></div>
-                    </div>
-                    <div class="card-body">
-                        Send us an email below.
-                    </div>
-                    <div class="card-footer">
-                      <button class="btn btn-primary"><i class="icon icon-mail"></i></button>
-                      <!-- <button class="btn btn-primary"><a href="mailto:abc@123.com?subject=Future App Suggestion"><i class="icon icon-mail"></i></a></button> -->
-                    </div>
-                  </div>
-            </div>
-        </div>        
-    </div>
-
-    <!-- weather modal -->
-    <div class="modal" id="weatherModal">
-      <a href="#close" class="modal-overlay" aria-label="Close"></a>
-      <div class="modal-container">
-        <div class="modal-header">
-          <a href="#close" class="btn btn-clear float-right closeBtn" aria-label="Close"></a>
-          <div class="modal-title h5" id="weatherModalTitle">Weather</div>
-          <div class="form-group" id="weatherFormGrp">
-            <label class="form-label" for="searchCity"></label>
-            <input class="form-input" type="text" id="searchCity" placeholder="San Francisco">
-            <button class="btn btn-primary mt-2" id="weatherFormBtn"><i class="icon icon-search"></i></button>
+          <div class="card-body">
+            ...
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary" id="newsBtn"><i class="icon icon-forward"></i></button>
           </div>
         </div>
-        <div class="modal-body">
-          <div class="content" id="weatherContent">
-            <img id="weatherModalImg" src="" alt="">
-            <p id="weatherModalTemp"></p>
-            <p id="weatherModalWind"></p>
-            <p id="weatherModalHumidity"></p>
+      </div>
+      <div class="column col-sm-12">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title h5">Music</div>
+            <!-- <div class="card-subtitle text-gray">...</div> -->
+          </div>
+          <div class="card-body">
+            See today's top tracks!
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary" id="musicBtn"><i class="icon icon-forward"></i></button>
           </div>
         </div>
-        <div class="modal-footer" id="weatherModalFooter">
-          <button class="btn btn-primary mt-2" id="weatherDeleteBtn"><i class="icon icon-delete"></i></button>
+      </div>
+      <div class="column col-sm-12">
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title h5">Coming Soon!</div>
+            <!-- <div class="card-subtitle text-gray">...</div> -->
+            <div class="card-subtitle text-gray"></div>
+          </div>
+          <div class="card-body">
+            Send us an email below.
+          </div>
+          <div class="card-footer">
+            <button class="btn btn-primary"><i class="icon icon-mail"></i></button>
+            <!-- <button class="btn btn-primary"><a href="mailto:abc@123.com?subject=Future App Suggestion"><i class="icon icon-mail"></i></a></button> -->
+          </div>
         </div>
       </div>
     </div>
-
-    <!-- news modal -->
-    <div class="modal" id="newsModal">
-      <a href="#close" class="modal-overlay" aria-label="Close"></a>
-      <div class="modal-container">
-        <div class="modal-header">
-          <a href="#close" class="btn btn-clear float-right closeBtn" aria-label="Close"></a>
-          <div class="modal-title h5">News</div>
-        </div>
-        <div class="modal-body">
-          <div id="newsModalContent" class="content">
-            <!-- content here -->
-          </div>
-        </div>
-        <div class="modal-footer">
-          ...
+  </div>
+  <!-- weather modal -->
+  <div class="modal" id="weatherModal">
+    <a href="#close" class="modal-overlay" aria-label="Close"></a>
+    <div class="modal-container">
+      <div class="modal-header">
+        <a href="#close" class="btn btn-clear float-right closeBtn" aria-label="Close"></a>
+        <div class="modal-title h5" id="weatherModalTitle">Weather</div>
+        <div class="form-group" id="weatherFormGrp">
+          <label class="form-label" for="searchCity"></label>
+          <input class="form-input" type="text" id="searchCity" placeholder="San Francisco">
+          <button class="btn btn-primary mt-2" id="weatherFormBtn"><i class="icon icon-search"></i></button>
         </div>
       </div>
-    </div>
-
-    <!-- music modal -->
-    <div class="modal" id="musicModal">
-      <a href="#close" class="modal-overlay" aria-label="Close"></a>
-      <div class="modal-container">
-        <div class="modal-header">
-          <a href="#close" id="close-btn" class="btn btn-clear float-right closeBtn" aria-label="Close"></a>
-          <div class="modal-title h5">Music</div>
-        </div>
-        <div class="modal-body">
-          <div class="content">
-            <!-- content here -->
-
-          </div>
-        </div>
-        <div class="modal-footer">
-          ...
+      <div class="modal-body">
+        <div class="content" id="weatherContent">
+          <img id="weatherModalImg" src="" alt="">
+          <p id="weatherModalTemp"></p>
+          <p id="weatherModalWind"></p>
+          <p id="weatherModalHumidity"></p>
         </div>
       </div>
+      <div class="modal-footer" id="weatherModalFooter">
+        <button class="btn btn-primary mt-2" id="weatherDeleteBtn"><i class="icon icon-delete"></i></button>
+      </div>
     </div>
-
-    <!-- jquery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="./assets/js/index.js"></script>
-    <script src="./assets/js/weather.js"></script>
-    <script src="./assets/js/music.js"></script>
-    <script src="./assets/js/news.js"></script>
+  </div>
+  <!-- news modal -->
+  <div class="modal" id="newsModal">
+    <a href="#close" class="modal-overlay" aria-label="Close"></a>
+    <div class="modal-container">
+      <div class="modal-header">
+        <a href="#close" class="btn btn-clear float-right closeBtn" aria-label="Close"></a>
+        <div class="modal-title h5">News</div>
+      </div>
+      <div class="modal-body">
+        <div class="content">
+          <!-- content here -->
+        </div>
+      </div>
+      <div class="modal-footer">
+        ...
+      </div>
+    </div>
+  </div>
+  <!-- music modal -->
+  <div class="modal" id="musicModal">
+    <a href="#close" class="modal-overlay" aria-label="Close"></a>
+    <div class="modal-container">
+      <div class="modal-header">
+        <a href="#close" class="btn btn-clear float-right closeBtn" aria-label="Close"></a>
+        <div class="modal-title h5">Music</div>
+      </div>
+      <div class="modal-body">
+        <div class="content" id="songList">
+          <!-- content here -->
+          <div class="form-group" id="musicFormGrp">
+            <label class="form-label" for="searchArtistname"> Enter Artist Name </label>
+            <input class="form-input" type="text" id="searchArtistname" placeholder="Selena Gomez">
+            <button class="btn btn-primary mt-2" id="musicFormBtn"><i class="icon icon-search"></i> </button>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer" id="musicModalFooter">
+        <button class="btn btn-action" id="musicLeftBtn"><i class="icon icon-arrow-left"></i></button>
+        <!-- <button class="btn btn-primary mt-2" ><i class="icon icon-delete"></i></button> -->
+      </div>
+    </div>
+  </div>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./assets/js/index.js"></script>
+  <script src="./assets/js/weather.js"></script>
+  <script src="./assets/js/music.js"></script>
+  <script src="./assets/js/news.js"></script>
 </body>
+
 </html>
