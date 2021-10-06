@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <div class="hero hero-sm bg-gray">
+  <div class="hero hero-sm bg-primary">
     <div class="hero-body">
       <h1>App Toolkit</h1>
       <p>Your Personal Utility Belt</p>
@@ -38,10 +38,10 @@
   <div class="container">
     <div class="columns">
       <div class="column col-md-12">
+        <!-- weather card -->
         <div class="card">
           <div class="card-header">
             <div class="card-title h5">Weather</div>
-            <!-- <div class="card-subtitle text-gray">...</div> -->
           </div>
           <div class="card-body">
             Check your local weather.
@@ -52,13 +52,13 @@
         </div>
       </div>
       <div class="column col-sm-12">
+        <!-- news card -->
         <div class="card">
           <div class="card-header">
             <div class="card-title h5">News</div>
-            <!-- <div class="card-subtitle text-gray">...</div> -->
           </div>
           <div class="card-body">
-            ...
+            Read today's top stories from NYT.
           </div>
           <div class="card-footer">
             <button class="btn btn-primary" id="newsBtn"><i class="icon icon-forward"></i></button>
@@ -66,13 +66,13 @@
         </div>
       </div>
       <div class="column col-sm-12">
+        <!-- music card -->
         <div class="card">
           <div class="card-header">
             <div class="card-title h5">Music</div>
-            <!-- <div class="card-subtitle text-gray">...</div> -->
           </div>
           <div class="card-body">
-            See today's top tracks!
+            Search for an artist's top tracks.
           </div>
           <div class="card-footer">
             <button class="btn btn-primary" id="musicBtn"><i class="icon icon-forward"></i></button>
@@ -80,10 +80,10 @@
         </div>
       </div>
       <div class="column col-sm-12">
+        <!-- suggestions card -->
         <div class="card">
           <div class="card-header">
             <div class="card-title h5">Coming Soon!</div>
-            <!-- <div class="card-subtitle text-gray">...</div> -->
             <div class="card-subtitle text-gray"></div>
           </div>
           <div class="card-body">
@@ -91,7 +91,6 @@
           </div>
           <div class="card-footer">
             <button class="btn btn-primary"><i class="icon icon-mail"></i></button>
-            <!-- <button class="btn btn-primary"><a href="mailto:abc@123.com?subject=Future App Suggestion"><i class="icon icon-mail"></i></a></button> -->
           </div>
         </div>
       </div>
@@ -133,11 +132,9 @@
       </div>
       <div class="modal-body">
         <div id="newsModalContent" class="content">
-          <!-- content here -->
         </div>
       </div>
       <div class="modal-footer">
-        ...
       </div>
     </div>
   </div>
@@ -151,7 +148,6 @@
       </div>
       <div class="modal-body">
         <div class="content" id="songList">
-          <!-- content here -->
           <div class="form-group" id="musicFormGrp">
             <label class="form-label" for="searchArtistname"> Enter Artist Name </label>
             <input class="form-input" type="text" id="searchArtistname" placeholder="Selena Gomez">
@@ -160,8 +156,7 @@
         </div>
       </div>
       <div class="modal-footer" id="musicModalFooter">
-        <button class="btn btn-action" id="musicLeftBtn"><i class="icon icon-arrow-left"></i></button>
-        <!-- <button class="btn btn-primary mt-2" ><i class="icon icon-delete"></i></button> -->
+        <button class="btn btn-primary mt-2" id="musicLeftBtn"><i class="icon icon-arrow-left"></i></button>
       </div>
     </div>
   </div>

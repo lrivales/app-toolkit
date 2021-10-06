@@ -3,8 +3,6 @@ function getTopTracks(artist) {
     fetch("https://ws.audioscrobbler.com/2.0/?method=artist.gettoptracks&artist=" + artist + "&api_key=3cc896d1dbfc0a29acc1818a8098ad61&format=json&autocorrect=1&limit=10")
         .then(response => response.json())
         .then(data => {
-            console.log(data);
-
             if (!data.error) {
                 $('#musicLeftBtn').show();
                 $("#musicFormGrp").hide();
@@ -20,7 +18,7 @@ function getTopTracks(artist) {
                     $(songItem).append(songName);
                     $(songOrderedList).append(songItem);
                     $("#songList").append(songOrderedList);
-                }   //this shows it but I need it to only show once. and only on the other click? songitem
+                }
             } else {
                 $(errorMsgEl).text(data.message);
                 $(errorMsgEl).addClass("text-error");
@@ -33,16 +31,15 @@ var errorMsgEl = document.createElement("p");
 
 $("#musicBtn").click(function () {
     $("#musicModal").addClass("active");
+    $("#musicLeftBtn").hide();
 });
 
 
 $("#musicFormBtn").click(function () {
     var artistName = $("#searchArtistname").val();
-    console.log(artistName)
     getTopTracks(artistName);
 });
 
-$("#musicLeftBtn").hide();
 $("#musicLeftBtn").click(function () {
     $('#musicLeftBtn').hide();
     $("#musicFormGrp").show();

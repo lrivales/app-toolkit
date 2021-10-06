@@ -1,7 +1,5 @@
 // js for news card
 
-
-
 var getUrl = function() {
     fetch("https://api.nytimes.com/svc/topstories/v2/home.json?api-key=75GRRh7XLtAhPrsJjB6vbIP3gjCKKSGV")
         .then(function(response) {
@@ -27,7 +25,6 @@ var getUrl = function() {
                 titleLis.appendChild(listContent)
                 modalEl.appendChild(titleLis)
             }
-           
         })
 }
 
@@ -38,8 +35,6 @@ $("#newsBtn").click(function() {
 });
 
 $(".close-btn").click(function() {
-    
     $("#newsModal").clear();
-
 });
 
