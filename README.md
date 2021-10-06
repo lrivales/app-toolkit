@@ -23,7 +23,7 @@ It utilizes the following APIs with plenty of room to grow:
 2. Enter your location and click search.
 3. The modal refreshes with the current weather.
 4. Click the trash icon to change your location.
-5. 3. Click the x to close the modal.
+5. Click the x to close the modal.
 
 ### News
 1. Click on the news card and a modal pops up.
